@@ -14,6 +14,7 @@ mkdir -p "$OUTPUT_DIR"
 pandoc index.md -t revealjs -s -o "$OUTPUT_DIR/index.html" --slide-level 3 \
     -V revealjs-url=https://unpkg.com/reveal.js@5.0.4 \
     -V slideNumber=true \
+    --include-in-header=<(cat ./custom.css | sed -e '1i<style>' -e '$a</style>') \
     --katex
 
 cp -r images "$OUTPUT_DIR/"
