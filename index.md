@@ -8,6 +8,20 @@ theme: white
 
 Hello World
 
+<!--
+Key bindings
+f: 	全画面
+o: 	アウトライン表示
+n: 	次のページ
+p: 	前のページ
+b: 	黒画面
+s: 	ノートの表示(ポップアップ)
+h: 	左のページ
+j: 	下のページ
+k: 	上のページ
+l: 	右のページ
+-->
+
 ### Image
 
 Vertical slide with an image.
@@ -37,6 +51,14 @@ coyonedaMap' a = \f -> contramap f a
 Text with revealjs fragments.
 
 See [Reveal.js docs](https://revealjs.com/fragments/) for further info.
+
+::: {.fragment}
+1. Fade in
+2. Fade in
+3. Fade in
+:::
+
+### Fade out
 
 ::: {.fragment .fade-out}
 1. Fade out
@@ -75,6 +97,14 @@ Split contents on the left side.
 Split contents on the right side.
 :::
 ::::::::::::::
+
+## Pause
+
+Before pause
+
+. . .
+
+After pause
 
 ## Latex
 
