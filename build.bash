@@ -12,7 +12,7 @@ mkdir -p "$OUTPUT_DIR"
 # https://revealjs.com/config/
 
 pandoc index.md -t revealjs -s -o "$OUTPUT_DIR/index.html" --slide-level 3 \
-    -V revealjs-url=https://unpkg.com/reveal.js@4.5.0 \
+    -V revealjs-url=https://unpkg.com/reveal.js@5.0.4 \
     -V slideNumber=true \
     --katex
 
