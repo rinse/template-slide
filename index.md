@@ -88,153 +88,68 @@ Text with revealjs fragments. Fade-in by default.
 
 See [Reveal.js docs](https://revealjs.com/fragments/) for further info.
 
-::: {.fragment}
-1. Fade out
-2. Fade out
-3. Fade out
-:::
+### Fades
 
-### Fade out
+Works on both block and inline elements
 
-::: {.fragment .fade-out}
-1. Fade out
-2. Fade out
-3. Fade out
-:::
+1. [Fade in]{.fragment}
+1. [Fade out]{.fragment .fade-out}
+1. [Fade in then out]{.fragment .fade-in-then-out}
+1. [Current visible]{.fragment .current-visible}
+1. [Fade in then semi out]{.fragment .fade-in-then-semi-out}
+1. [Semi fade out]{.fragment .semi-fade-out}
 
-### Fade up
+### Formattings
+
+Works only on inline elements.
+
+[Strike]{.fragment .strike}
+
+### Fade towards
+
+Works only on block elements.
 
 ::: {.fragment .fade-up}
-1. Fade up
-2. Fade up
-3. Fade up
+Fade up
 :::
-
-### Fade down
 
 ::: {.fragment .fade-down}
-1. Fade down
-2. Fade down
-3. Fade down
+Fade down
 :::
-
-### Fade left
 
 ::: {.fragment .fade-left}
-1. Fade left
-2. Fade left
-3. Fade left
+Fade left
 :::
-
-### Fade right
 
 ::: {.fragment .fade-right}
-1. Fade right
-2. Fade right
-3. Fade right
+Fade right
 :::
 
-### Fade in then out
+### Grow and shrnk
 
-::: {.fragment .fade-in-then-out}
-1. Fade in then out
-2. Fade in then out
-3. Fade in then out
-:::
-
-### Current visible
-
-::: {.fragment .current-visible}
-1. Current visible
-2. Current visible
-3. Current visible
-:::
-
-### Fade in then semi out
-
-::: {.fragment .fade-in-then-semi-out}
-1. Fade in then semi out
-2. Fade in then semi out
-3. Fade in then semi out
-:::
-
-### Fade grow
+Works only on block elements
 
 ::: {.fragment .grow}
-1. Grow
-2. Grow
-3. Grow
+Grow
 :::
-
-### Semi fade out
-
-::: {.fragment .semi-fade-out}
-1. Semi fade out
-2. Semi fade out
-3. Semi fade out
-:::
-
-### Shrink
 
 ::: {.fragment .shrink}
-1. Fade shrink
-2. Fade shrink
-3. Fade shrink
+Shrink
 :::
 
-### Strike
+### Highlights
 
-[abc]{.fragment .strike}
+Works on both block and inline elements.
 
-Strike doesn't work on block elements.
+1. [Highlight red]{.fragment .highlight-red}
+1. [Highlight green]{.fragment .highlight-green}
+1. [Highlight blue]{.fragment .highlight-blue}
 
-### Highlight red
+### Highlight current *
 
-::: {.fragment .highlight-red}
-1. Highlight red
-2. Highlight red
-3. Highlight red
-:::
-
-### Highlight green
-
-::: {.fragment .highlight-green}
-1. Highlight green
-2. Highlight green
-3. Highlight green
-:::
-
-### Highlight blue
-
-::: {.fragment .highlight-blue}
-1. Highlight blue
-2. Highlight blue
-3. Highlight blue
-:::
-
-### Highlight current red
-
-::: {.fragment .highlight-current-red}
-1. Highlight current red
-2. Highlight current red
-3. Highlight current red
-:::
-
-### Highlight current green
-
-::: {.fragment .highlight-current-green}
-1. Highlight current green
-2. Highlight current green
-3. Highlight current green
-:::
-
-### Highlight current blue
-
-::: {.fragment .highlight-current-blue}
-1. Highlight current blue
-2. Highlight current blue
-3. Highlight current blue
-:::
+1. [Highlight current red]{.fragment .highlight-current-red}
+1. [Highlight current green]{.fragment .highlight-current-green}
+1. [Highlight current blue]{.fragment .highlight-current-blue}
 
 ## Columns
 
