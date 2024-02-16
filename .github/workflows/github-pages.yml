@@ -29,7 +29,6 @@ jobs:
               -V revealjs-url=https://unpkg.com/reveal.js@5.0.4
               -V slideNumber=true
               --include-in-header=custom-header.html --katex
-      - run: ls
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
