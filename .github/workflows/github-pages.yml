@@ -26,7 +26,7 @@ jobs:
         with:
           args: >-
             index.md -t revealjs -s -o out/index.html --slide-level 3
-              -V revealjs-url=https://unpkg.com/reveal.js@5.0.4
+              -V revealjs-url=https://unpkg.com/reveal.js@5.1.0
               -V slideNumber=true
               --include-in-header=custom-header.html --katex
       - name: Setup Pages
