@@ -32,11 +32,12 @@ The alt text is shown below the image.
 
 ## Incremental
 
+::::: {.color-aqua key="background-black"}
 ::: incremental
-1. Item 1
-2. Item 2
-3. Item 3
+1. .color-aqua is defined in custom.css
+2. So [data-key="background-black"] is
 :::
+:::::
 
 See [Pandoc docs](https://pandoc.org/MANUAL.html#incremental-lists) for further info.
 
@@ -50,8 +51,7 @@ See also [fenced_divs](https://pandoc.org/MANUAL.html#extension-fenced_divs) on 
 
 See [Various fragments](#various-fragments) for [more]{.fragment .highlight-red} fragments.
 
-See also [bracketed_spans](https://pandoc.org/MANUAL.html#extension-bracketed_spans) on the [pandoc docs]{.underline}.
-
+See also [bracketed_spans](https://pandoc.org/MANUAL.html#extension-bracketed_spans) on the [pandoc docs]{.underline .color-aqua}.
 
 ### Pause
 
@@ -163,6 +163,36 @@ Split contents on the right side.
 :::
 ::::::::::::::
 
+## Animating sample
+
+::::: {.flex-container .justify-content-center}
+::: {.rotate-right .square key="background-black"}
+:::
+::: {.rotate-right .square key="background-black"}
+:::
+:::::
+
+::::: {.flex-container .justify-content-left}
+::: {key="background-black" .height-30 .grow-right}
+:::
+:::::
+
+## Layout
+
+::: {.r-stack}
+::::: {.fragment}
+![Sudachi](images/fruit_sudachi.png)
+:::::
+::::: {.fragment .rotate-right .square key="background-black"}
+:::::
+:::
+
+See [Layout](https://revealjs.com/layout/) on reveal.js.
+
+## Lazy loading
+
+<iframe data-src="https://example.com"></iframe>
+
 ## Code block
 
 Text with Haskell code.
@@ -194,3 +224,13 @@ g \circ f &= \mathrm{id}_A  \\
 f \circ g &= \mathrm{id}_B
 \end{aligned}
 $$
+
+## Footnotes
+
+Here is a footnote reference[^1], and another.
+
+The foot notes are shown in the last page.^[Inline notes are easier to write, since
+you don't have to pick an identifier and move down to type the
+note.]
+
+[^1]: Here is the footnote.

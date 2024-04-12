@@ -6,3 +6,65 @@
 .reveal h6 {
     text-transform: none;
 }
+
+.color-aqua {
+    color: aqua;
+}
+
+[data-key="background-black"] {
+    background-color: black;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.height-30 {
+    height: 30px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-left{
+    justify-content: left;
+}
+
+.rotate-right {
+    /* animation: app-spin infinite 20s linear; */
+    animation-name: app-spin;
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+@keyframes app-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grow-right {
+    animation-name: grow-right;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow-right {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
