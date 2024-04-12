@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-OUTPUT_DIR=./build
+OUTPUT_DIR=./out
 rm -fr "$OUTPUT_DIR"
 mkdir -p "$OUTPUT_DIR"
 

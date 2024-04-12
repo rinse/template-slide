@@ -20,12 +20,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - run: mkdir build && cp -r images build/
+      - run: mkdir out && cp -r images out/
       - run: cat ./custom.css | sed -e '1i<style>' -e '$a</style>' > custom-header.html
       - uses: docker://pandoc/core:3.1.1
         with:
           args: >-
-            index.md -t revealjs -s -o build/index.html --slide-level 3
+            index.md -t revealjs -s -o out/index.html --slide-level 3
               -V revealjs-url=https://unpkg.com/reveal.js@5.0.4
               -V slideNumber=true
               --include-in-header=custom-header.html --katex
@@ -34,7 +34,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: build
+          path: out
 
   deploy:
     needs: build
