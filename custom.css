@@ -1,47 +1,91 @@
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5,
-.reveal h6 {
-    text-transform: none;
+/* The whole reveal content */
+.reveal {
+  /* Slides container */
+  .slides {
+    section {
+      /* Slide titles */
+      h1, h2, h3, h4, h5, h6 {
+        text-transform: none;
+      }
+      /* Slide descriptions */
+      p {
+      }
+    }
+  }
 }
 
-.color-aqua {
-    color: aqua;
+
+/* Slide layouts */
+.reveal .slides section.align-top-left {
+  width: 80%;
+  height: 80%;
+  text-align: left;
 }
 
+.name-card {
+  text-align: left;
+  .header {
+    display: flex;
+    justify-content: left;
+    img { margin: 20px; }
+  }
+  .body {
+    font-size: 80%;
+  }
+}
+
+
+/* text-align */
+.reveal .text-align-center { text-align: center; }
+.reveal .text-align-left { text-align: left; }
+.reveal .text-align-center { text-align: right; }
+
+
+/* flex and justify-content */
+.flex-container { display: flex; }
+.justify-content-center { justify-content: center; }
+.justify-content-left { justify-content: left; }
+
+
+/* Colours */
+.color-black { color: black; }
+.color-silver { color: silver; }
+.color-gray { color: gray; }
+.color-white { color: white; }
+.color-maroon { color: maroon; }
+.color-red { color: red; }
+.color-purple { color: purple; }
+.color-fuchsia { color: fuchsia; }
+.color-green { color: green; }
+.color-lime { color: lime; }
+.color-olive { color: olive; }
+.color-yellow { color: yellow; }
+.color-navy { color: navy; }
+.color-blue { color: blue; }
+.color-teal { color: teal; }
+.color-aqua { color: aqua; }
+
+/* Slide-specific CSS values */
 [data-key="background-black"] {
-    background-color: black;
+  color: white;
+  background-color: black;
 }
 
 .square {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .height-30 {
-    height: 30px;
-}
-
-.flex-container {
-    display: flex;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-left{
-    justify-content: left;
+  height: 30px;
 }
 
 .rotate-right {
-    /* animation: app-spin infinite 20s linear; */
-    animation-name: app-spin;
-    animation-iteration-count: infinite;
-    animation-duration: 20s;
-    animation-timing-function: linear;
+  /* animation: app-spin infinite 20s linear; */
+  animation-name: app-spin;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
 }
 
 @keyframes app-spin {
@@ -54,10 +98,10 @@
 }
 
 .grow-right {
-    animation-name: grow-right;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+  animation-name: grow-right;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 @keyframes grow-right {

@@ -1,8 +1,54 @@
 ---
-author: rinse
+author: Author
 title: Slide Title
 theme: white
 ---
+
+## Layouts
+
+よく使うレイアウト
+
+### Default
+
+デフォルトは上下左右の中央寄せ
+
+### Align top-left{.align-top-left}
+
+左上寄せ
+
+パワーポイントの「タイトルと本文」のようなレイアウト。
+
+### 縦分割
+
+:::: {.columns}
+::: {.column}
+Hello
+:::
+
+::: {.column}
+World
+:::
+::::
+
+### 名刺{.name-card}
+
+:::: {.header}
+<img src="./images/fruit_sudachi.png"></img>
+
+::: {}
+**John Doe**
+
+First line
+
+Second line
+:::
+::::
+
+::: {.body}
+- 詳細1
+- 詳細2
+- 詳細3
+:::
 
 ## Key bindings
 
@@ -24,26 +70,46 @@ theme: white
 :::
 ::::::::::::::
 
-## Image
+### Speaker notes
 
-The alt text is shown below the image.
+Type the 's' key to show the notes.
 
-![Sudachi](images/fruit_sudachi.png)
+See [Pandoc docs](https://pandoc.org/MANUAL.html#speaker-notes) for further info.
 
-## Incremental
+::: notes
+This is my note.
+- Topic 1
+- Topic 2
+:::
 
-::::: {.color-aqua key="background-black"}
+## Styles
+
+### Apply styles to inline elements
+
+[Apply styles with classes]{.color-red}
+
+[Apply styles data-key]{key="background-black"}
+
+[Apply styles with inline attributes]{style="color: lightpink"}
+
+### Apply styles to block elements
+
+::: {key="background-black" style="color: lightpink"}
+Hello World
+:::
+
+## Incrementals
+
 ::: incremental
 1. .color-aqua is defined in custom.css
 2. So [data-key="background-black"] is
 :::
-:::::
 
 See [Pandoc docs](https://pandoc.org/MANUAL.html#incremental-lists) for further info.
 
 See also [fenced_divs](https://pandoc.org/MANUAL.html#extension-fenced_divs) on the pandoc docs.
 
-### Fragment
+### Fragments
 
 1. [Item 1]{.fragment}
 2. [Item 2]{.fragment .highlight-red}
@@ -61,18 +127,6 @@ Before pause
 
 After pause
 
-## Speaker notes
-
-Type the 's' key to show the notes.
-
-See [Pandoc docs](https://pandoc.org/MANUAL.html#speaker-notes) for further info.
-
-::: notes
-This is my note.
-- Topic 1
-- Topic 2
-:::
-
 ## Formatting
 
 * **Emphasis**, [Mark]{.mark}, ~~Strike out~~
@@ -82,7 +136,7 @@ This is my note.
 
 See [Pandoc docs](https://pandoc.org/chunkedhtml-demo/8.12-inline-formatting.html) for further info.
 
-## Various fragments
+## Fragments
 
 Text with revealjs fragments. Fade-in by default.
 
@@ -189,9 +243,9 @@ Split contents on the right side.
 
 See [Layout](https://revealjs.com/layout/) on reveal.js.
 
-## Lazy loading
+## Lazy loading{.align-top-left}
 
-<iframe data-src="https://example.com"></iframe>
+<iframe data-src="https://example.com" width="100%" height="100%"></iframe>
 
 ## Code block
 
