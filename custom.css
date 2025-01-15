@@ -14,6 +14,13 @@
   }
 }
 
+.reveal .slide-background.present .slide-background-content {
+  background-image: url("./images/background.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 100% 100%; */
+  background-size: auto 100%;
+}
 
 /* Slide layouts */
 .reveal .slides section.align-top-left {

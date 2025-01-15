@@ -33,7 +33,7 @@ World
 ### 名刺{.name-card}
 
 :::: {.header}
-<img src="./images/fruit_sudachi.png"></img>
+<img src="./images/icon.svg" width="128px" height="128px"></img>
 
 ::: {}
 **John Doe**
@@ -235,7 +235,7 @@ Split contents on the right side.
 
 ::: {.r-stack}
 ::::: {.fragment}
-![Sudachi](images/fruit_sudachi.png)
+<img src="./images/icon.svg" width="128px" height="128px"></img>
 :::::
 ::::: {.fragment .rotate-right .square key="background-black"}
 :::::
