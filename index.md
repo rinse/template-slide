@@ -1,7 +1,7 @@
 ---
 author: Author
 title: Slide Title
-theme: white
+theme: solarized
 ---
 
 ## Layouts
